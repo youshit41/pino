@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cervino Zeland Arneta — Creative Production, Storytelling &amp; Project Management</title>
+<meta name="description" content="Cervino Zeland Arneta, mahasiswa Ilmu Komunikasi Universitas Amikom Yogyakarta. Terlibat dari pengembangan ide, penyusunan konsep dan brief, hingga koordinasi dan pelaksanaan proyek.">
+<meta property="og:title" content="Cervino Zeland Arneta — Personal Profile">
+<meta property="og:description" content="Creative Production, Storytelling & Project Management.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#000000;
+  --ink:#F2F2F2;
+  --muted:#808080;
+  --card:#111111;
+  --line:rgba(255,255,255,.15);
+  --hover:rgba(255,255,255,.06);
+  --dot:#2FBF5C;
+  --r:7px;
+  --pad:clamp(16px,3.4vw,40px);
+  --sans:"Instrument Sans",-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --serif:"Instrument Serif",Georgia,serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--sans);font-size:15px;line-height:1.45;
+  letter-spacing:-.011em;-webkit-font-smoothing:antialiased;
+  transition:background .35s ease,color .35s ease;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+em,.it{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.005em}
+
+.shell{max-width:1560px;margin:0 auto;padding-inline:var(--pad)}
+.mut{color:var(--muted)}
+.tiny{font-size:13px;line-height:1.35}
+
+/* ---------------- nav ---------------- */
+.nav{position:sticky;top:0;z-index:80;padding:12px 0 10px;background:linear-gradient(var(--bg) 68%,transparent)}
+.nav .shell{display:flex;align-items:center;gap:6px}
+.mark{
+  width:29px;height:29px;flex:none;border-radius:var(--r);background:var(--ink);color:var(--bg);
+  display:grid;place-items:center;font-size:12px;font-weight:600;letter-spacing:.02em;
+}
+.pill{
+  background:var(--card);border:1px solid transparent;border-radius:var(--r);
+  padding:6px 11px;font-size:14px;line-height:1.25;white-space:nowrap;
+  transition:background .18s ease,color .18s ease,opacity .18s ease;
+}
+.pill:hover{background:var(--ink);color:var(--bg)}
+html .pill{border-color:var(--line)}
+.pill.solid{border-color:transparent}
+.nav .grow{flex:1}
+.nav .hide-s{display:none}
+@media(min-width:720px){.nav .hide-s{display:block}}
+.pill.solid{background:var(--ink);color:var(--bg);display:inline-flex;align-items:center;gap:7px}
+.pill.solid:hover{opacity:.82}
+.pill.ghost{background:transparent;border-color:var(--line)}
+.pill.ghost:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.led{width:6px;height:6px;border-radius:50%;background:var(--dot);flex:none}
+
+/* ---------------- hero ---------------- */
+.hero{padding:clamp(40px,7vw,92px) 0 clamp(56px,8vw,104px)}
+h1{
+  font-weight:400;font-size:clamp(34px,5.35vw,78px);line-height:1.03;
+  letter-spacing:-.033em;margin:0;max-width:19ch;
+}
+h1 .it{font-size:1.03em}
+.hbody{display:grid;grid-template-columns:1fr;gap:clamp(26px,4vw,44px);margin-top:clamp(34px,5vw,58px);align-items:start}
+@media(min-width:940px){.hbody{grid-template-columns:minmax(0,1fr) 348px}}
+.hshot img{aspect-ratio:16/9;object-position:50% 44%}
+.feed{width:min(348px,100%);margin-left:auto;display:grid;gap:26px}
+.fcard{display:block}
+.fhead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;font-weight:600;font-size:14px}
+.plus{color:var(--muted);font-weight:400;line-height:1;font-size:15px;transition:transform .25s ease}
+.fcard:hover .plus{transform:rotate(90deg)}
+.fcard p{margin:3px 0 10px;color:var(--muted);font-size:13.5px;line-height:1.4}
+.fcard .fimg{border-radius:var(--r);overflow:hidden;background:var(--hover)}
+.fcard .fimg img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:56% 38%;transition:transform .7s cubic-bezier(.2,.7,.3,1)}
+.fcard .fimg.poster img{aspect-ratio:4/5;object-position:50% 24%}
+.fcard:hover .fimg img{transform:scale(1.035)}
+
+/* ---------------- statement ---------------- */
+.say{padding:clamp(64px,11vw,150px) 0}
+.say p{
+  margin:0 auto;max-width:19ch;
+  font-size:clamp(23px,3.05vw,44px);line-height:1.16;letter-spacing:-.028em;font-weight:400;
+}
+.say.left p{margin-left:0}
+.say.endsay{padding:clamp(64px,10vw,130px) 0 0}
+.say.mid p{margin-left:26%;max-width:21ch}
+@media(max-width:900px){.say.mid p{margin-left:0}}
+
+/* ---------------- index rows ---------------- */
+.idxhead{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:12px}
+.idxhead h2{font-size:15px;font-weight:600;margin:0;letter-spacing:-.01em}
+.row{
+  display:grid;grid-template-columns:1fr;gap:16px;
+  border-top:1px solid var(--line);padding:14px 0 22px;
+  transition:background .2s ease;
+}
+.row:last-of-type{border-bottom:1px solid var(--line)}
+@media(min-width:940px){
+  .row{grid-template-columns:minmax(200px,272px) minmax(0,1fr);gap:clamp(22px,3.2vw,52px)}
+}
+.rinfo{display:flex;flex-direction:column;justify-content:flex-start;gap:13px}
+.rtop{display:flex;gap:9px;align-items:flex-start}
+.chip{
+  width:27px;height:27px;flex:none;border-radius:6px;display:grid;place-items:center;
+  color:#fff;font-size:12px;font-weight:600;letter-spacing:.01em;
+}
+.rname{font-weight:600;font-size:14.5px;line-height:1.25}
+.rkind{color:var(--muted);font-size:14px;line-height:1.25}
+.rdesc{color:var(--muted);font-size:13.5px;line-height:1.4;max-width:34ch;margin:0}
+.rmeta{margin:3px 0 0;border-top:1px solid var(--line)}
+.rmeta div{display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-bottom:1px solid var(--line)}
+.rmeta dt{color:var(--muted);font-size:13px;line-height:1.35;white-space:nowrap}
+.rmeta dd{margin:0;font-size:13px;line-height:1.35;text-align:right}
+.rbtn{align-self:flex-start;margin-top:3px;font-size:13px;display:inline-flex;align-items:center;gap:7px}
+.tiles{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.tile{border-radius:var(--r);overflow:hidden;background:var(--hover)}
+.tile img{width:100%;aspect-ratio:3/2;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.3,1)}
+.tile.poster img{aspect-ratio:3/4}
+.row:hover .tile img{transform:scale(1.03)}
+.t3{grid-column:span 3}
+.t2{grid-column:span 2}
+.tiles > .tile.t3:only-child{grid-column:1/5}
+.tiles > .tile.t2:only-child{grid-column:1/3}
+@media(max-width:939px){
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  .t3,.t2{grid-column:auto}
+  .tiles > .tile:only-child,
+  .tiles > .tile.t3:only-child,
+  .tiles > .tile.t2:only-child{grid-column:1 / -1}
+  .tiles > .tile.poster:only-child{grid-column:auto}
+  .rinfo{gap:10px}
+}
+
+/* ---------------- roles ---------------- */
+.cols{display:grid;grid-template-columns:1fr;gap:clamp(26px,4vw,46px)}
+@media(min-width:820px){.cols{grid-template-columns:repeat(3,1fr)}}
+.col h3{font-size:clamp(21px,2.3vw,30px);font-weight:400;letter-spacing:-.028em;margin:0 0 14px}
+.lst{list-style:none;margin:0;padding:0}
+.lst li{border-top:1px solid var(--line);display:flex;gap:9px;align-items:center;padding:9px 0;font-size:14.5px}
+.lst li:last-child{border-bottom:1px solid var(--line)}
+.chip.n{background:#2A2A2A;color:var(--ink)}
+.chip svg{width:15px;height:15px;display:block;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------------- about ---------------- */
+.about{display:grid;grid-template-columns:1fr;gap:10px;margin-top:clamp(56px,8vw,104px)}
+@media(min-width:960px){.about{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.abox{
+  background:var(--card);border-radius:var(--r);padding:clamp(20px,2.6vw,34px);
+  display:flex;flex-direction:column;justify-content:space-between;gap:clamp(34px,7vw,80px);
+}
+.abox p{margin:0 0 18px;font-size:clamp(19px,1.85vw,27px);line-height:1.24;letter-spacing:-.026em}
+.abox p:last-of-type{margin-bottom:0}
+.arow{display:flex;flex-wrap:wrap;gap:7px}
+.aside{display:grid;gap:10px;grid-template-columns:1fr}
+.ph{position:relative;border-radius:var(--r);overflow:hidden;background:var(--hover)}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph::after{content:"";position:absolute;inset:0 0 auto 0;height:74px;pointer-events:none;
+  background:linear-gradient(to bottom,rgba(0,0,0,.5),transparent)}
+.ph.wide img{aspect-ratio:2/1}
+.ph.tall img{aspect-ratio:1/1}
+.phlabel{position:absolute;z-index:1;top:9px;left:10px;line-height:1.25;text-shadow:0 1px 10px rgba(0,0,0,.55);color:#fff}
+.phlabel b{display:block;font-size:13px;font-weight:600}
+.phlabel span{font-size:13px;opacity:.78}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+/* ---------------- footer ---------------- */
+footer{padding:clamp(64px,10vw,130px) 0 26px}
+.fcols{display:grid;grid-template-columns:1fr;gap:clamp(26px,4vw,44px)}
+@media(min-width:760px){.fcols{grid-template-columns:repeat(3,1fr)}}
+.fcols h4{font-size:clamp(23px,2.4vw,32px);font-weight:400;letter-spacing:-.028em;margin:0 0 12px}
+.fbar{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px;border-top:1px solid var(--line);margin-top:clamp(40px,6vw,70px);padding-top:14px;color:var(--muted);font-size:13px}
+
+.rv{opacity:0;transform:translateY(14px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:4px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-trail" viewBox="0 0 24 24"><path d="M2.5 19.5h19M4.5 19.5 10 10.5l3.2 4.6L16.5 8l4.2 11.5"/></symbol>
+<symbol id="i-film" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.7"/><path d="M7.6 5v14M16.4 5v14M3 12h4.6M16.4 12h4.6"/></symbol>
+<symbol id="i-bubble" viewBox="0 0 24 24"><path d="M21 15.2a2 2 0 0 1-2 2H8.6L4 20.8V5.8a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z"/><path d="M8.5 8.8h8M8.5 12.4h5"/></symbol>
+<symbol id="i-mega" viewBox="0 0 24 24"><path d="M4 10h3l8-5v14l-8-5H4a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1z"/><path d="M18 9a4.5 4.5 0 0 1 0 6M7 14v4.5"/></symbol>
+<symbol id="i-cam" viewBox="0 0 24 24"><rect x="2.5" y="6.5" width="13" height="11" rx="2"/><path d="m15.5 11.5 6-3.4v7.8l-6-3.4z"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3.2 2.1 5.7 5.7 2.1-5.7 2.1L12 18.8l-2.1-5.7-5.7-2.1 5.7-2.1z"/></symbol>
+<symbol id="i-board" viewBox="0 0 24 24"><path d="M9 5.5H7.2A1.7 1.7 0 0 0 5.5 7.2v11.6A1.7 1.7 0 0 0 7.2 20.5h9.6a1.7 1.7 0 0 0 1.7-1.7V7.2A1.7 1.7 0 0 0 16.8 5.5H15"/><rect x="9" y="3.5" width="6" height="3.4" rx="1"/><path d="M9 12h6M9 16h3.5"/></symbol>
+<symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20.2 5 16 16.4 4.6a2.1 2.1 0 0 1 3 3L8 19z"/><path d="m14.4 6.6 3 3"/></symbol>
+<symbol id="i-cut" viewBox="0 0 24 24"><circle cx="6.2" cy="6.4" r="2.4"/><circle cx="6.2" cy="17.6" r="2.4"/><path d="M8.3 7.7 19.5 18.4M8.3 16.3 19.5 5.6"/></symbol>
+<symbol id="i-mic" viewBox="0 0 24 24"><rect x="9.5" y="3" width="5" height="10.5" rx="2.5"/><path d="M6.5 11.2a5.5 5.5 0 0 0 11 0M12 16.7V20M9.2 20h5.6"/></symbol>
+<symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8.2" r="3.2"/><path d="M3 19.4a6 6 0 0 1 12 0"/><path d="M16.2 5.4a3.2 3.2 0 0 1 0 5.6M17.2 14a5.6 5.6 0 0 1 3.8 5"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3.4 3 8.2l9 4.8 9-4.8z"/><path d="m3 13.4 9 4.8 9-4.8"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="15" rx="1.8"/><path d="M3.5 10h17M8 3.2v4.4M16 3.2v4.4"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24"><path d="M6 3.2v17.6"/><path d="M6 4.6h11.5l-2.2 3.6 2.2 3.6H6z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.8" y="5.5" width="18.4" height="13" rx="1.8"/><path d="m3.4 7 8.6 5.8L20.6 7"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2"/><path d="M10.4 18.4h3.2"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.2s7-6.4 7-11.2a7 7 0 1 0-14 0c0 4.8 7 11.2 7 11.2z"/><circle cx="12" cy="9.8" r="2.6"/></symbol>
+</defs></svg>
+
+<nav class="nav">
+  <div class="shell">
+    <span class="mark">CZ</span>
+    <a class="pill hide-s" href="#profil">Profil</a>
+    <a class="pill hide-s" href="#karya">Karya</a>
+    <a class="pill hide-s" href="#peran">Peran</a>
+    <span class="grow"></span>
+    <a class="pill solid" href="#kontak"><span class="led"></span>Hubungi</a>
+  </div>
+</nav>
+
+<!-- ============== HERO ============== -->
+<header class="hero">
+  <div class="shell">
+    <h1>Creative Production, <span class="it">Storytelling</span> &amp; Project Management.</h1>
+
+    <div class="hbody">
+      <div class="ph hshot">
+        <img src="https://raw.githubusercontent.com/youshit41/pino/main/photo/01%20page.png" alt="Potret Cervino Zeland Arneta dalam pencahayaan low-key">
+        <div class="phlabel"><b>Cervino Zeland Arneta</b><span>Creative Production</span></div>
+      </div>
+
+      <div class="feed">
+      <a class="fcard" href="#profil">
+        <div class="fhead"><span>Cervino Zeland Arneta</span><span class="plus">+</span></div>
+        <p>Mahasiswa Ilmu Komunikasi Universitas Amikom Yogyakarta. Terlibat sejak pengembangan ide sampai pelaksanaan proyek di lapangan.</p>
+        <div class="fimg"><img src="https://framerusercontent.com/images/yJKWacIIwj8pcwuqGgYXF20DbgE.jpeg?scale-down-to=1024" alt="Potret Cervino Zeland Arneta"></div>
+      </a>
+      <a class="fcard" href="#karya">
+        <div class="fhead"><span>Winih Panguripan</span><span class="plus">+</span></div>
+        <p class="mut tiny">Film Dokumenter &middot; Produser &amp; Editor</p>
+        <div class="fimg poster"><img loading="lazy" src="https://framerusercontent.com/images/qH4SE2YIxPdUft6mcWTGzXfAJg.jpeg?scale-down-to=1024" alt="Poster film dokumenter Winih Panguripan"></div>
+      </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============== STATEMENT ============== -->
+<section class="say mid" id="profil">
+  <div class="shell">
+    <p class="rv">Terlibat sejak tahap <span class="it">pengembangan ide</span>, penyusunan konsep dan brief, hingga koordinasi serta pelaksanaan proyek.</p>
+  </div>
+</section>
+
+<!-- ============== KARYA ============== -->
+<section id="karya">
+  <div class="shell">
+    <div class="idxhead rv"><h2>Karya pilihan</h2><span class="pill ghost tiny">Lima proyek</span></div>
+
+    <article class="row rv">
+      <div class="rinfo">
+        <div class="rtop">
+          <span class="chip" style="background:#2F3B2A"><svg><use href="#i-trail"/></svg></span>
+          <span><span class="rname">Untamed Speed Trail</span><br><span class="rkind">Event</span></span>
+        </div>
+        <p class="rdesc">Event management dan event division untuk penyelenggaraan trail run, dari persiapan area sampai hari lomba.</p>
+        <dl class="rmeta">
+          <div><dt>Tahun</dt><dd>2026</dd></div>
+          <div><dt>Tim</dt><dd>ROMANSA</dd></div>
+          
+        </dl>
+        <a class="pill ghost rbtn" href="https://www.instagram.com/romansa.hub?igsi=bHh1Z2FtYmtxcXF5" target="_blank" rel="noopener">Lihat Instagram &#8599;</a>
+      </div>
+      <div class="tiles">
+        <div class="tile t3"><img loading="lazy" src="https://framerusercontent.com/images/HwdXSbfOz2w4Tj2JeV6HfXSa6M.jpeg?scale-down-to=1024" alt="Gerbang start Untamed Speed Trail"></div>
+        <div class="tile t3"><img loading="lazy" src="https://framerusercontent.com/images/YaOx8Eo7k0FUgAD0sceUMOmtR8.jpeg?scale-down-to=1024" alt="Foto bersama peserta dan panitia Untamed Speed Trail"></div>
+      </div>
+    </article>
+
+    <article class="row rv">
+      <div class="rinfo">
+        <div class="rtop">
+          <span class="chip" style="background:#D9A310"><svg><use href="#i-film"/></svg></span>
+          <span><span class="rname">Gentho Kates</span><br><span class="rkind">Film</span></span>
+        </div>
+        <p class="rdesc">Art director — menyusun tampilan visual, properti, dan suasana ruang cerita bersama tim produksi.</p>
+        <dl class="rmeta">
+          <div><dt>Tahun</dt><dd>2025 </dd></div>
+          <div><dt>Tim</dt><dd>SKYTEAM</dd></div>
+        </dl>
+        <a class="pill ghost rbtn" href="https://drive.google.com/file/d/1Zy_kgoyUoAX14e1rd4pMN4EqbVK9QdGh/view?usp=drive_link" target="_blank" rel="noopener">Tonton film &#8599;</a>
+      </div>
+      <div class="tiles">
+        <div class="tile poster t2"><img loading="lazy" src="https://framerusercontent.com/images/aSHYqlGOMjpSINySHFEb7YXPS4.jpeg?scale-down-to=1024" alt="Poster film Gentho Kates"></div>
+      </div>
+    </article>
+
+    <article class="row rv">
+      <div class="rinfo">
+        <div class="rtop">
+          <span class="chip" style="background:#CC3B2C"><svg><use href="#i-bubble"/></svg></span>
+          <span><span class="rname">Ceriwid Talkshow</span><br><span class="rkind">Talkshow</span></span>
+        </div>
+        <p class="rdesc">Host sekaligus tim kreatif dan produksi, dari penyusunan rundown sampai membawakan acara di depan kamera.</p>
+        <dl class="rmeta">
+          <div><dt>Tahun</dt><dd>2024</dd></div>
+          <div><dt>Tim</dt><dd>Ceriwid</dd></div>
+        </dl>
+        <a class="pill ghost rbtn" href="https://youtu.be/B70JDWWH8eY?si=5k_0jfNgIVp4B2Nh" target="_blank" rel="noopener">Tonton Podcast &#8599;</a>
+      </div>
+      <div class="tiles">
+        <div class="tile t3"><img loading="lazy" src="https://framerusercontent.com/images/h0iZzG09eD8cyhxvvq6C3nmHUM.jpeg?scale-down-to=1024" alt="Episode Ceriwid Talkshow bertema tips berbisnis di usia muda"></div>
+      </div>
+    </article>
+
+    <article class="row rv">
+      <div class="rinfo">
+        <div class="rtop">
+          <span class="chip" style="background:#4C6B47"><svg><use href="#i-mega"/></svg></span>
+          <span><span class="rname">Satu Hisapan Seribu Penyesalan</span><br><span class="rkind">Iklan Layanan Masyarakat</span></span>
+        </div>
+        <p class="rdesc">Scriptwriter, videography, dan creative development untuk kampanye bahaya rokok di usia muda.</p>
+        <dl class="rmeta">
+          <div><dt>Tahun</dt><dd>2025</dd></div>
+          <div><dt>Tim</dt><dd>Luminads Studio</dd></div>
+        </dl>
+        <a class="pill ghost rbtn" href=" https://youtu.be/Q8lkkMupmVA?si=2DoBEMWuewJmH42h" target="_blank" rel="noopener">Tonton Iklan Layanan Masyarakat &#8599;</a>
+      </div>
+      <div class="tiles">
+        <div class="tile t3"><img loading="lazy" src="https://framerusercontent.com/images/Aib83EuBttvADp2eD2zFslzrR6M.jpeg?scale-down-to=1024" alt="Cuplikan iklan layanan masyarakat Satu Hisapan Seribu Penyesalan"></div>
+      </div>
+    </article>
+
+    <article class="row rv">
+      <div class="rinfo">
+        <div class="rtop">
+          <span class="chip" style="background:#B8801C"><svg><use href="#i-cam"/></svg></span>
+          <span><span class="rname">Winih Panguripan</span><br><span class="rkind">Film Dokumenter</span></span>
+        </div>
+        <p class="rdesc">Dua kursi dalam satu proyek: menjaga produksi tetap berjalan di lapangan, lalu menyusun ceritanya di meja editing.</p>
+        <dl class="rmeta">
+          <div><dt>Tahun</dt><dd>2026</dd></div>
+          <div><dt>Tim</dt><dd>Dokumenter Gaul</dd></div>
+        </dl>
+        <a class="pill ghost rbtn" href="https://drive.google.com/file/d/1Kp8myhuxhudKGbkCxASBNTEOxKTYppVp/view?usp=sharing" target="_blank" rel="noopener">Tonton Dokumenter &#8599;</a>
+      </div>
+      <div class="tiles">
+        <div class="tile poster t2"><img loading="lazy" src="https://framerusercontent.com/images/qH4SE2YIxPdUft6mcWTGzXfAJg.jpeg?scale-down-to=1024" alt="Poster film dokumenter Winih Panguripan"></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============== STATEMENT 2 ============== -->
+<section class="say mid">
+  <div class="shell">
+    <p class="rv">Setiap proyek adalah proses untuk <span class="it">membangun dan menggabungkan</span> kreativitas, komunikasi, manajemen, dan gagasan.</p>
+  </div>
+</section>
+
+<!-- ============== PERAN ============== -->
+<section id="peran">
+  <div class="shell">
+    <div class="cols">
+      <div class="col rv">
+        <h3>Creative Production</h3>
+        <ul class="lst">
+          <li><span class="chip n"><svg><use href="#i-spark"/></svg></span>Creative Producer</li>
+          <li><span class="chip n"><svg><use href="#i-board"/></svg></span>Production Management</li>
+          <li><span class="chip n"><svg><use href="#i-pen"/></svg></span>Scriptwriter / Story Developer</li>
+          <li><span class="chip n"><svg><use href="#i-cut"/></svg></span>Editor</li>
+        </ul>
+      </div>
+      <div class="col rv">
+        <h3>Media &amp; Communication</h3>
+        <ul class="lst">
+          <li><span class="chip n"><svg><use href="#i-mic"/></svg></span>Host / Presenter</li>
+          <li><span class="chip n"><svg><use href="#i-people"/></svg></span>Public Relations</li>
+          <li><span class="chip n"><svg><use href="#i-layers"/></svg></span>Content Development</li>
+        </ul>
+      </div>
+      <div class="col rv">
+        <h3>Event</h3>
+        <ul class="lst">
+          <li><span class="chip n"><svg><use href="#i-cal"/></svg></span>Event Management</li>
+          <li><span class="chip n"><svg><use href="#i-flag"/></svg></span>Program / Event Division</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- about block -->
+    <div class="about rv">
+      <div class="abox">
+        <div>
+          <p>Saya <span class="it">Cervino Zeland Arneta</span>, mahasiswa Ilmu Komunikasi yang punya pengalaman di berbagai proses kreatif dan produksi.</p>
+          <p>Saya terbiasa terlibat sejak tahap pengembangan ide, penyusunan konsep dan brief, hingga koordinasi serta pelaksanaan proyek.</p>
+        </div>
+        <div class="arow">
+          <a class="pill solid" href="mailto:cervinozelandd@gmail.com"><span class="led"></span>Kirim email</a>
+          <a class="pill ghost" href="https://wa.me/6281326370052" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="aside">
+        <div class="ph wide">
+          <img loading="lazy" src="https://framerusercontent.com/images/LozThO3ecgEogrIJSMH2RCogQLU.jpeg?scale-down-to=2048" alt="Proses kerja bersama tim produksi">
+          <div class="phlabel"><b>Yogyakarta</b><span>Ruang kerja</span></div>
+        </div>
+        <div class="duo">
+          <div class="ph tall">
+            <img loading="lazy" src="https://framerusercontent.com/images/yJKWacIIwj8pcwuqGgYXF20DbgE.jpeg?scale-down-to=1024" alt="Potret Cervino Zeland Arneta">
+            <div class="phlabel"><b>Cervino Zeland Arneta</b><span>Creative Production</span></div>
+          </div>
+          <div class="ph tall">
+            <img loading="lazy" src="https://framerusercontent.com/images/E0k6N4OHr9NNUptrCuKnDLZ3kuk.jpeg?scale-down-to=1024" alt="Cervino Zeland Arneta di lokasi produksi">
+            <div class="phlabel"><b>Di lokasi</b><span>Produksi &amp; event</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer id="kontak">
+  <div class="shell">
+    <div class="fcols">
+      <div>
+        <h4>Karya</h4>
+        <ul class="lst">
+          <li><span class="chip" style="background:#2F3B2A"><svg><use href="#i-trail"/></svg></span>Untamed Speed Trail</li>
+          <li><span class="chip" style="background:#D9A310"><svg><use href="#i-film"/></svg></span>Gentho Kates</li>
+          <li><span class="chip" style="background:#CC3B2C"><svg><use href="#i-bubble"/></svg></span>Ceriwid Talkshow</li>
+          <li><span class="chip" style="background:#4C6B47"><svg><use href="#i-mega"/></svg></span>Satu Hisapan Seribu Penyesalan</li>
+          <li><span class="chip" style="background:#B8801C"><svg><use href="#i-cam"/></svg></span>Winih Panguripan</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Peran</h4>
+        <ul class="lst">
+          <li><span class="chip n"><svg><use href="#i-spark"/></svg></span>Creative Producer</li>
+          <li><span class="chip n"><svg><use href="#i-pen"/></svg></span>Scriptwriter / Story Developer</li>
+          <li><span class="chip n"><svg><use href="#i-cut"/></svg></span>Editor</li>
+          <li><span class="chip n"><svg><use href="#i-mic"/></svg></span>Host / Presenter</li>
+          <li><span class="chip n"><svg><use href="#i-cal"/></svg></span>Event Management</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <ul class="lst">
+          <li><span class="chip n"><svg><use href="#i-mail"/></svg></span><a href="mailto:cervinozelandd@gmail.com">cervinozelandd@gmail.com</a></li>
+          <li><span class="chip n"><svg><use href="#i-phone"/></svg></span><a href="https://wa.me/6281326370052" target="_blank" rel="noopener">+62 813-2637-0052</a></li>
+          <li><span class="chip n"><svg><use href="#i-pin"/></svg></span>Yogyakarta, Indonesia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="say mid endsay">
+       <CENTER><p class="rv">LET'S CRAFT<br><span class="it">THE NEXT</span><br>CHAPTER.</p> </CENTER>
+    </div>
+
+    <div class="fbar">
+      <span>© 2026 Cervino Zeland Arneta</span>
+      <span>Universitas Amikom Yogyakarta</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){
+      en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+    },{rootMargin:'0px 0px -6% 0px',threshold:.05});
+    els.forEach(function(e){io.observe(e)});
+  } else { els.forEach(function(e){e.classList.add('in')}); }
+})();
+</script>
+</body>
+</html>
